@@ -1,0 +1,19 @@
+/**Candy Store list:
+Snickers (8)
+Lolipops (15)
+Sour Patch Kids (12)
+Gummy Bears (7)
+Mike & Ikes (4) **/
+
+Create Table candies(id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price Integer);
+
+insert into candies values (1, "Snickers", 8, 2);
+insert into candies values (2, "Lolipops", 15, 5); 
+insert into candies values (3, "Sour Patch Kids", 12, 19);
+insert into candies values (4, "Gummy Bears", 7, 7);
+insert into candies values (5, "Mike & Ikes", 4, 12);
+
+SELECT * FROM candies;
+Select * from candies where price <= 10 order by price
+
+select price, sum(quantity) from candies by price;
